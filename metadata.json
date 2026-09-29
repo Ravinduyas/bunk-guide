@@ -1,0 +1,6 @@
+{
+  "name": "Helio",
+  "description": "Helio is the PMS for hostels and camps. Beds, bookings and check-ins in one place, plus a guest guide for what's on tonight and everything else your guests keep asking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
