@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Waves, Anchor, Heart, Sparkles, Building2 } from 'lucide-react';
+import surfCampImg from '../assets/images/bunk_surf_camp_1790140617612.jpg';
 
 interface HouseTypesSectionProps {
   onOpenDemoWithTheme?: (themeName: string) => void;
@@ -131,7 +132,7 @@ export const HouseTypesSection: React.FC<HouseTypesSectionProps> = ({
                   {/* Photo or stylized gradient layer */}
                   {house.id === 'surf' ? (
                     <img
-                      src="/src/assets/images/bunk_surf_camp_1790140617612.jpg"
+                      src={surfCampImg}
                       alt="Surf camp"
                       className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"

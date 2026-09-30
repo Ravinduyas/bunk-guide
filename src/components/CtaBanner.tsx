@@ -1,4 +1,5 @@
 import React from 'react';
+import ctaPointingImg from '../assets/images/bunk_cta_pointing_1790140606370.jpg';
 
 interface CtaBannerProps {
   onOpenStart: () => void;
@@ -50,7 +51,7 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onOpenStart }) => {
           <div className="md:col-span-5 flex justify-center md:justify-end">
             <div className="relative max-w-xs sm:max-w-sm w-full">
               <img
-                src="/src/assets/images/bunk_cta_pointing_1790140606370.jpg"
+                src={ctaPointingImg}
                 alt="Traveler recommending Helio"
                 className="w-full h-auto object-cover object-bottom drop-shadow-2xl rounded-t-3xl"
                 referrerPolicy="no-referrer"

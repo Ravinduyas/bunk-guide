@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Plus, Minus } from 'lucide-react';
+import travelersTrioImg from '../assets/images/bunk_travelers_trio_1790140595702.jpg';
 
 export const FaqSection: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -59,7 +60,7 @@ export const FaqSection: React.FC = () => {
             <div className="pt-4 max-w-sm">
               <div className="overflow-hidden rounded-3xl bg-white border border-[#E5E1D8] shadow-md p-2">
                 <img
-                  src="/src/assets/images/bunk_travelers_trio_1790140595702.jpg"
+                  src={travelersTrioImg}
                   alt="Cheerful backpackers laughing together"
                   className="w-full h-auto object-cover rounded-2xl"
                   referrerPolicy="no-referrer"

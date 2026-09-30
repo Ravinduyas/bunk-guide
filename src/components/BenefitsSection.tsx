@@ -1,5 +1,6 @@
 import React from 'react';
 import { MessageCircleQuestion, TrendingUp, RefreshCw, Palette } from 'lucide-react';
+import handPhoneImg from '../assets/images/bunk_hand_phone_1790140585207.jpg';
 
 export const BenefitsSection: React.FC = () => {
   const benefits = [
@@ -39,7 +40,7 @@ export const BenefitsSection: React.FC = () => {
               {/* Image asset */}
               <div className="relative z-10 w-full h-full rounded-full overflow-hidden flex items-center justify-center">
                 <img
-                  src="/src/assets/images/bunk_hand_phone_1790140585207.jpg"
+                  src={handPhoneImg}
                   alt="Hand holding smartphone with the Helio guest guide"
                   className="w-full h-full object-cover rounded-full hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star, MessageSquare, Compass, ShieldAlert, Sparkles } from 'lucide-react';
+import jumpingTravelerImg from '../assets/images/bunk_jumping_traveler_1790140573652.jpg';
 
 interface FeatureBannerProps {
   onOpenDemo: () => void;
@@ -33,7 +34,7 @@ export const FeatureBanner: React.FC<FeatureBannerProps> = ({ onOpenDemo }) => {
             {/* Jumping backpacker cutout */}
             <div className="relative z-20 -mb-16 sm:-mb-24 flex justify-center transform hover:scale-105 transition-transform duration-300">
               <img
-                src="/src/assets/images/bunk_jumping_traveler_1790140573652.jpg"
+                src={jumpingTravelerImg}
                 alt="Backpacker jumping with joy"
                 className="w-48 sm:w-64 md:w-72 h-auto object-contain filter drop-shadow-[0_20px_35px_rgba(0,0,0,0.8)] rounded-full"
                 referrerPolicy="no-referrer"

@@ -3,8 +3,10 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
 
-export default defineConfig(() => {
+export default defineConfig(({command}) => {
   return {
+    // Served from https://ravinduyas.github.io/bunk-guide/ on GitHub Pages
+    base: command === 'build' ? '/bunk-guide/' : '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

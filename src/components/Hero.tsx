@@ -1,5 +1,6 @@
 import React from 'react';
 import { Smartphone, Sparkles, QrCode } from 'lucide-react';
+import heroTravelerImg from '../assets/images/bunk_hero_traveler_1790140559585.jpg';
 
 interface HeroProps {
   onOpenDemo: () => void;
@@ -107,7 +108,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemo, onOpenStart }) => {
               {/* Image Frame */}
               <div className="relative z-10 w-full overflow-hidden rounded-3xl bg-transparent">
                 <img
-                  src="/src/assets/images/bunk_hero_traveler_1790140559585.jpg"
+                  src={heroTravelerImg}
                   alt="Cheerful backpacker using the Helio guest guide on a smartphone"
                   className="w-full h-auto object-cover object-center rounded-3xl drop-shadow-lg"
                   loading="eager"
